@@ -2225,7 +2225,7 @@
 <body>
   <div class="editor-container">
       <div id="tabs-container" class="tabs-container"></div>
-      <div id="container" style="width:100%;height:calc(100% - 35px);"></div>
+      <div id="container" style="width:100%;height:calc(100% - 0px);"></div>
   </div>
   <style>
       .editor-container {
@@ -2237,7 +2237,7 @@
       .tabs-container {
           background-color: #141414;
           display: flex;
-          height: 35px;
+          height: 0px;
           overflow-x: auto;
           border-bottom: 1px solid #333;
           gap: 0;
@@ -2465,7 +2465,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[\n    Made by Salad\n    discord.gg/getsalad\n ]]";
+    const defaultText = "--[[\n    Made by LUNR\n    discord.gg/VnerSZksQN\n ]]";
     
     if (!content) {
         content = defaultText;
@@ -2529,7 +2529,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[ Made by Salad\n    discord.gg/getsalad\n ]]" : tab.content;
+        const contentToSet = tab.content.trim() === '' ? "--[[ Made by LUNR\n    discord.gg/VnerSZksQN\n ]]" : tab.content;
         editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
